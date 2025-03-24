@@ -19,17 +19,6 @@ body {
     background-size: 100%;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    
-}
-
-a:link, a:visited, a:active, a:hover {
-    text-decoration: none;
-    color: currentColor;
-}
 
 
 /*INTRODUCTION*/
@@ -77,36 +66,8 @@ a:link, a:visited, a:active, a:hover {
 @media only screen and (min-width: 1250px) {
 
     body  {
-        background-image: url("https://static.vecteezy.com/system/resources/previews/008/311/935/non_2x/the-illustration-graphic-consists-of-abstract-background-with-a-blue-gradient-dynamic-shapes-composition-eps10-perfect-for-presentation-background-website-landing-page-wallpaper-vector.jpg")
+        background-image: url("https://static.vecteezy.com/system/resources/previews/008/311/935/non_2x/the-illustration-graphic-consists-of-abstract-background-with-a-blue-gradient-dynamic-shapes-composition-eps10-perfect-for-presentation-background-website-landing-page-wallpaper-vector.jpg");
     }
-    .AccueilContainer {
-        flex-flow : row wrap;
-        justify-content: center;
-        align-items: center;
-        height: 100px;    
-    }
-
-    .DropDownMenu{
-        order : 2;
-        border-radius: 50%;
-        height: auto;
-        width: 100px;
-    }
-
-    .AccueilItem {
-        display: flex;
-    }
-
-    .P1 {
-        display: flex;
-        order: 1;
-    }
-
-    .P2 {
-        display: flex;
-        order: 3;
-    }
-
     .SelecteurContainer {
         position: relative;
         top: 10%;
