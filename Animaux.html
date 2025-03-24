@@ -6,73 +6,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- Liste des fichiers CSS-->
     <link rel="stylesheet" href="Carousel.css">
     <link rel="stylesheet" href="Animaux.css">
+    <link rel="stylesheet" href="banner.css">
     
 </head>
 <body>
-<!--Images sérieuses -->  
- <div class="slideshow-container">
-<!-- Ponyo -->
-  <div class="mySlides fade" data-slide-number="1">
-    <img src="/images/Ponyo.jpg"  class="ImgSlide" style="border-radius: 50%;">
-  </div>
-<!--Kodak-->
-  <div class="mySlides fade" data-slide-number="2">
-    <img src="/images/KodakSerieux.jpg"  class="ImgSlide" style="border-radius: 50%;">
-  </div>
 
-  <div class="mySlides fade" data-slide-number="3">
-    <img src="/images/TofuSerieux.jpg"  class="ImgSlide" style="border-radius: 50%;">
-  </div>
-
-  <div class="mySlides fade" data-slide-number="4">
-    <img src="/images/DiegoSerieux.jpg"  class="ImgSlide" style="border-radius: 50%;">
-  </div>
-
- </div>
-<!-- Images marrantes-->
-<div class="slideshow-container">
-
-  <div class="mySlides fade" data-slide-number="1">
-    <div class="numbertext">1 / 4</div>
-    <img src="/images/Ponyo.jpg" class="ImgSlide">
-    <div class="text">Axolot - Ponyo</div>
-  </div>
-
-  <div class="mySlides fade" data-slide-number="2">
-    <div class="numbertext">2 / 4</div>
-    <img src="/images/KodakFun.jpg" class="ImgSlide">
-    <div class="text">Chat - Kodak </div>
-  </div>
-
-  <div class="mySlides fade" data-slide-number="3">
-    <div class="numbertext">3 / 4</div>
-    <img src="/images/TofuFun.jpg" class="ImgSlide">
-    <div class="text">Chat - Tofu</div>
-  </div>
-
-  <div class="mySlides fade" data-slide-number="4">
-    <div class="numbertext">4 / 4</div>
-    <img src="/images/DiegoFun.jpg" class="ImgSlide">
-    <div class="text">Chien - Diego</div>
-  </div>
-
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+<div>
+    <ul class="AccueilContainer">
+            <input type="image" src="https://picsum.photos/200" class="AccueilItem DropDownMenu" id="dropDownMenu">
+            <li class="AccueilItem P1" id="accueilItem"><a href="index.html">Accueil</a></li>
+            <li class="AccueilItem P1" id="accueilItem"><a href="Animaux.html">Animaux</a></li>
+            <li class="AccueilItem P2" id="accueilItem"><a href="Me.html">Me</a></li>
+            <li class="AccueilItem P2" id="accueilItem"><a href="Famille.html">Famille</a></li>
+    </ul>
 </div>
-<br>
 
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>
-</div> 
+
+<div class="Global">
+  <!--Images sérieuses -->  
+ <div class="slideshow-container">
+  <!-- Ponyo -->
+    <div class="mySlides fade" data-slide-number="1">
+      <img src="Ponyo.jpg"  class="ImgSlide" style="border-radius: 50%;">
+    </div>
+  <!--Kodak-->
+    <div class="mySlides fade" data-slide-number="2">
+      <img src="KodakSerieux.jpg"  class="ImgSlide" style="border-radius: 50%;">
+    </div>
+  
+    <div class="mySlides fade" data-slide-number="3">
+      <img src="TofuSerieux.jpg"  class="ImgSlide" style="border-radius: 50%;">
+    </div>
+  
+    <div class="mySlides fade" data-slide-number="4">
+      <img src="DiegoSerieux.jpg"  class="ImgSlide" style="border-radius: 50%;">
+    </div>
+  
+   </div>
+  <!-- Images marrantes-->
+  <div class="slideshow-container">
+  
+    <div class="mySlides fade" data-slide-number="1">
+      <div class="numbertext">1 / 4</div>
+      <img src="Ponyo.jpg" class="ImgSlide">
+      <div class="text">Axolot - Ponyo</div>
+    </div>
+  
+    <div class="mySlides fade" data-slide-number="2">
+      <div class="numbertext">2 / 4</div>
+      <img src="KodakFun.jpg" class="ImgSlide">
+      <div class="text">Chat - Kodak </div>
+    </div>
+  
+    <div class="mySlides fade" data-slide-number="3">
+      <div class="numbertext">3 / 4</div>
+      <img src="TofuFun.jpg" class="ImgSlide">
+      <div class="text">Chat - Tofu</div>
+    </div>
+  
+    <div class="mySlides fade" data-slide-number="4">
+      <div class="numbertext">4 / 4</div>
+      <img src="DiegoFun.jpg" class="ImgSlide">
+      <div class="text">Chien - Diego</div>
+    </div>
+  
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div> 
+  
+  
+  <div class="slideshow-container">
+  
+  </div>
+
+</div>
     
-
-
 <script src="carousel.js"></script>
+
 </body>
 </html>

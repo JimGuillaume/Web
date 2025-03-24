@@ -31,37 +31,6 @@ a:link, a:visited, a:active, a:hover {
     color: currentColor;
 }
 
-/*Accueil*/
-.AccueilContainer {
-
-    background: linear-gradient(180deg, #D3B5D5 0%, rgba(0, 0, 0, 0) 100%);
-    height: auto;
-    width: auto;
-    display:flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: flex-start;
-    align-content: center;
-
-    text-shadow: black 1px 1px;
-    z-index: 15;
-}
-
-.AccueilItem {
-    display : none;
-    margin-bottom: 10px;
-    padding: 5%;
-    font-size: 35px;
-
-}
-
-.DropDownMenu{
-    display: flex;
-    border-radius: 50%;
-    height: auto;
-    width: 50%;
-}
-
 
 /*INTRODUCTION*/
 
