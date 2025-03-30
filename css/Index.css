@@ -43,7 +43,7 @@ body {
 }
 
 .Selecteur img {
-    border-radius: 15px;
+    border-radius: 50%;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -51,16 +51,38 @@ body {
 
 
 
+
+/*MEDIA QUERIES TABLETTE 600 - 1250*/
+@media only screen and (min-width: 600px) {
+
+    body {
+        background: #E3CAA5;
+        color: #FFFBE9;
+        text-shadow: #AD8B73 1px 1px;
+    }
+
+    .SelecteurContainer {
+        flex-flow: row wrap;
+    }
+
+    .Selecteur {
+        position: inherit;
+    }
+    .Selecteur img {
+        border-radius: 10px;
+    }
+}
+
 /*MEDIA QUERIES PC 1250+*/
 @media only screen and (min-width: 1250px) {
 
     body  {
-        background-color: #112D4E;
+        background: #112D4E;
+        color: #DBE2EF;
     }
     .SelecteurContainer {
         position: relative;
         top: 10%;
-    
         height: 60%;
         width: 100%;
         display: flex;
@@ -93,9 +115,4 @@ body {
         z-index: 2;
         transform: scale(1.05);
     }
-}
-
-/*MEDIA QUERIES TABLETTE 600 - 1250*/
-@media only screen and (min-width: 600px) {
-
 }
