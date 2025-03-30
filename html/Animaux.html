@@ -1,129 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
     <title>Guillaume Jim - Animaux</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Liste des fichiers CSS-->
-    <link rel="stylesheet" href="../css/Carousel.css">
-    <link rel="stylesheet" href="../css/Animaux.css">  
-    <link rel="stylesheet" href="../css/banner.css">
-    
-</head>
-<body>
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/Animaux.css" />
+    <link rel="stylesheet" href="../css/Carousel.css" />
+    <link rel="stylesheet" href="../css/banner.css" />
+  </head>
+  <body>
+    <!-- Bannière de dessus de page-->
+    <!--Version Desktop-->
+    <nav class="NotMobile">
+      <ul class="AccueilContainer">
+        <li class="AccueilItem P2">
+          <img src="../images/Disney1.webp" />
+        </li>
+        <li class="AccueilItem P1"><a href="../index.html">Accueil</a></li>
+        <li class="AccueilItem P1">
+          <a href="../html/Animaux.html">Animaux</a>
+        </li>
+        <li class="AccueilItem P3"><a href="../html/Me.html">Me</a></li>
+        <li class="AccueilItem P3">
+          <a href="../html/Famille.html">Famille</a>
+        </li>
+      </ul>
+    </nav>
 
-
-  <!-- Bannière de dessus de page-->
-<div>
-    <ul class="AccueilContainer">
-            <li class="AccueilItem P2"><input type="image" src="../images/Disney1.webp" class="ImgRounded"></li>
-            <li class="AccueilItem P1"><a href="../index.html">Accueil</a></li>
-            <li class="AccueilItem P1"><a href="../html/Animaux.html">Animaux</a></li>
-            <li class="AccueilItem P3"><a href="../html/Me.html">Me</a></li>
-            <li class="AccueilItem P3"><a href="../html/Famille.html">Famille</a></li>
-    </ul>
-</div>
-
-
-  <!--Images sérieuses -->  
-  <div class="slideshow-container serieux">
-    <!-- Ponyo -->
-      <div class="mySlides fade" data-slide-number="1">
-        <img src="../images/Ponyo.jpg"  class="ImgSlide" style="border-radius: 50%;">
+    <!--Version Mobile & Tablet-->
+    <nav class="Mobile">
+      <input
+        type="image"
+        src="../images/Disney1.webp"
+        class="DropMenuButton"
+        id="Button"
+        alt="Menu"
+      />
+      <div class="DropMenu" id="DropMenu">
+        <a href="../index.html">Accueil</a>
+        <a href="../html/Animaux.html">Animaux</a>
+        <a href="../html/Me.html">Me</a>
+        <a href="../html/Famille.html">Famille</a>
       </div>
-    <!--Kodak-->
-      <div class="mySlides fade" data-slide-number="2">
-        <img src="../images/KodakSerieux.jpg"  class="ImgSlide" style="border-radius: 50%;">
+    </nav>
+
+    <main>
+      <div class="BoxAnimaux">
+        <!--Images sérieuses -->
+        <div class="Animaux slideshow-container serieux">
+          <!-- Ponyo -->
+          <div class="mySlides fade" data-slide-number="1">
+            <img
+              src="../images/Ponyo.jpg"
+              class="ImgSlide"
+              style="border-radius: 50%"
+            />
+          </div>
+          <!--Kodak-->
+          <div class="mySlides fade" data-slide-number="2">
+            <img
+              src="../images/KodakSerieux.jpg"
+              class="ImgSlide"
+              style="border-radius: 50%"
+            />
+          </div>
+
+          <div class="mySlides fade" data-slide-number="3">
+            <img
+              src="../images/TofuSerieux.jpg"
+              class="ImgSlide"
+              style="border-radius: 50%"
+            />
+          </div>
+
+          <div class="mySlides fade" data-slide-number="4">
+            <img
+              src="../images/DiegoSerieux.jpg"
+              class="ImgSlide"
+              style="border-radius: 50%"
+            />
+          </div>
+        </div>
+
+        <!-- Images marrantes-->
+        <div class="Animaux slideshow-container fun">
+          <div class="mySlides fade" data-slide-number="1">
+            <div class="numbertext">1 / 4</div>
+            <img src="../images/Ponyo.jpg" class="ImgSlide" />
+            <div class="text">Axolot - Ponyo</div>
+          </div>
+
+          <div class="mySlides fade" data-slide-number="2">
+            <div class="numbertext">2 / 4</div>
+            <img src="../images/KodakFun.jpg" class="ImgSlide" />
+            <div class="text">Chat - Kodak</div>
+          </div>
+
+          <div class="mySlides fade" data-slide-number="3">
+            <div class="numbertext">3 / 4</div>
+            <img src="../images/TofuFun.jpg" class="ImgSlide" />
+            <div class="text">Chat - Tofu</div>
+          </div>
+
+          <div class="mySlides fade" data-slide-number="4">
+            <div class="numbertext">4 / 4</div>
+            <img src="../images/DiegoFun.jpg" class="ImgSlide" />
+            <div class="text">Chien - Diego</div>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br />
       </div>
-    
-      <div class="mySlides fade" data-slide-number="3">
-        <img src="../images/TofuSerieux.jpg"  class="ImgSlide" style="border-radius: 50%;">
+
+      <div class="Animaux slideshow-container annecdote">
+        <!-- Ponyo -->
+        <div class="mySlides fade" data-slide-number="1">
+          <h1>Salut je suis ponyo l'axolot</h1>
+          <p>
+            Il fut un jour où le poisson de l'aquarium adjacent décida de sauter
+            dans le mien, j'ai alors découvert un magnifiuqe casse-croute pour
+            ma journée.
+          </p>
+        </div>
+        <!--Kodak-->
+        <div class="mySlides fade" data-slide-number="2">
+          <h1>Kodak la faillite</h1>
+          <p>
+            Mon maitre m'a nommé kodak comme une entreprise qui n'existe presque
+            plus car je ne fais que manger le profit dans ma gamelle. Les
+            enfants m'appelent même "Grosdak" à cause de ça.
+          </p>
+        </div>
+
+        <div class="mySlides fade" data-slide-number="3">
+          <h1>Tofu l'adresse</h1>
+          <p>
+            Moi c'est Tofu, je suis un chat très charismatique, je le suis
+            encore plus quand je fais totalement exprès de rater tout mes sauts.
+            Je suis un vrai pro de la chute.
+          </p>
+        </div>
+
+        <div class="mySlides fade" data-slide-number="4">
+          <h1>Diego l'alarme</h1>
+          <p>
+            Moi c'est diego. Je suis le protecteur génial de mon terrictoire. Je
+            suis tellement efficace que quand j'abboie je fais fuir les gens qui
+            viennent me rendre visite.
+          </p>
+        </div>
       </div>
-    
-      <div class="mySlides fade" data-slide-number="4">
-        <img src="../images/DiegoSerieux.jpg"  class="ImgSlide" style="border-radius: 50%;">
-      </div>
-    
-    </div>
-
-
-  <!-- Images marrantes-->
-  <div class="slideshow-container fun">
-  
-    <div class="mySlides fade" data-slide-number="1">
-      <div class="numbertext">1 / 4</div>
-      <img src="../images/Ponyo.jpg" class="ImgSlide">
-      <div class="text">Axolot - Ponyo</div>
-    </div>
-  
-    <div class="mySlides fade" data-slide-number="2">
-      <div class="numbertext">2 / 4</div>
-      <img src="../images/KodakFun.jpg" class="ImgSlide">
-      <div class="text">Chat - Kodak </div>
-    </div>
-  
-    <div class="mySlides fade" data-slide-number="3">
-      <div class="numbertext">3 / 4</div>
-      <img src="../images/TofuFun.jpg" class="ImgSlide">
-      <div class="text">Chat - Tofu</div>
-    </div>
-  
-    <div class="mySlides fade" data-slide-number="4">
-      <div class="numbertext">4 / 4</div>
-      <img src="../images/DiegoFun.jpg" class="ImgSlide">
-      <div class="text">Chien - Diego</div>
-    </div>
-  
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-  <br>
- </div>
-
-
-  <div class="slideshow-container annecdote">
-    <!-- Ponyo -->
-    <div class="mySlides fade" data-slide-number="1">
-      <h1>Salut je suis ponyo l'axolot</h1>
-      <p>
-        Il fut un jour où le poisson de l'aquarium adjacent décida de sauter
-        dans le mien, j'ai alors découvert un magnifiuqe casse-croute pour ma
-        journée.
-      </p>
-    </div>
-    <!--Kodak-->
-    <div class="mySlides fade" data-slide-number="2">
-      <h1>Kodak la faillite</h1>
-      <p>
-        Mon maitre m'a nommé kodak comme une entreprise qui n'existe presque plus
-        car je ne fais que manger le profit dans ma gamelle. Les enfants m'appelent
-        même "Grosdak" à cause de ça.
-      </p>
-    </div>
-  
-    <div class="mySlides fade" data-slide-number="3">
-      <h1>Tofu l'adresse</h1>
-      <p>
-        Moi c'est Tofu, je suis un chat très charismatique, je le suis encore plus quand
-        je fais totalement exprès de rater tout mes sauts. Je suis un vrai pro de la chute.
-      </p>
-    </div>
-  
-    <div class="mySlides fade" data-slide-number="4">
-      <h1>Diego l'alarme</h1>
-      <p>
-        Moi c'est diego. Je suis le protecteur génial de mon terrictoire.
-        Je suis tellement efficace que quand j'abboie je fais fuir les gens qui viennent
-        me rendre visite.
-      </p>
-    </div>
-   </div>
-  
-  </div>
-<script src="../js/carousel.js"></script>
-
-</body>
+    </main>
+    <script src="../js/carousel.js"></script>
+    <script src="../js/DropMenu.js"></script>
+  </body>
 </html>

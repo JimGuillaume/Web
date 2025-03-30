@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <title>Guillaume Jim</title>
 
     <!--Import CSS & JS-->
     <link rel="stylesheet" href="../css/Timeline.css" />
-    <link rel="stylesheet" href="../css/Me.css" />
     <link rel="stylesheet" href="../css/banner.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/Me.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
   </head>
   <body>
-    <!--Banniere du dessus-->
-    <div>
+    <!-- Bannière de dessus de page-->
+    <!--Version Desktop-->
+    <nav class="NotMobile">
       <ul class="AccueilContainer">
         <li class="AccueilItem P2">
-          <input type="image" src="../images/Disney1.webp" class="ImgRounded" />
+          <img src="../images/Disney1.webp" />
         </li>
         <li class="AccueilItem P1"><a href="../index.html">Accueil</a></li>
         <li class="AccueilItem P1">
@@ -25,7 +28,24 @@
           <a href="../html/Famille.html">Famille</a>
         </li>
       </ul>
-    </div>
+    </nav>
+
+    <!--Version Mobile & Tablet-->
+    <nav class="Mobile">
+      <input
+        type="image"
+        src="../images/Disney1.webp"
+        class="DropMenuButton"
+        id="Button"
+        alt="Menu"
+      />
+      <div class="DropMenu" id="DropMenu">
+        <a href="../index.html">Accueil</a>
+        <a href="../html/Animaux.html">Animaux</a>
+        <a href="../html/Me.html">Me</a>
+        <a href="../html/Famille.html">Famille</a>
+      </div>
+    </nav>
 
     <!--Block 1  Timeline de ma scolarité-->
     <div class="timeline">
@@ -79,6 +99,56 @@
       </div>
     </div>
     <!--Block 2 Pie Chart-->
+    <h1>Passions</h1>
+    <div>
+      <canvas id="Passions"></canvas>
+    </div>
     <!--Block 3 Cards avec mes projects-->
+    <h1>Liste des projets</h1>
+    <div class="CardContainer">
+      <div class="Card">
+        <h1>Gestion DB en C#</h1>
+        <a
+          href="https://github.com/JimGuillaume/LancementLoginDB"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src="../images/LoginDB.png"
+        /></a>
+        <p>
+          Mise en place d'une gestion de DB à l'aide d'un programme en C# en
+          lien avec pgsql
+        </p>
+      </div>
+
+      <div class="Card">
+        <h1>Projet Web1</h1>
+        <a
+          href="https://github.com/JimGuillaume/Web"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="../images/SiteWeb1.png" />
+        </a>
+        <p>
+          Mise en place d'un site personnel pour un projet de developpement
+          FrontEnd utilisant HTML, CSS & JavaScript.
+        </p>
+      </div>
+
+      <div class="Card">
+        <h1>Github</h1>
+        <a
+          href="https://github.com/JimGuillaume"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="../images/github.png" />
+        </a>
+        <p>Liens vers ma page github</p>
+      </div>
+    </div>
+
+    <script src="../js/Camembert.js"></script>
+    <script src="../js/DropMenu.js"></script>
   </body>
 </html>

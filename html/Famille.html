@@ -3,6 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <title>Guillaume Jim - Famille</title>
+
+    <!-- Liste des fichiers CSS-->
+    <link rel="stylesheet" href="../css/banner.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/Famille.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- Bannière de dessus de page-->
+    <!--Version Desktop-->
+    <nav class="NotMobile">
+      <ul class="AccueilContainer">
+        <li class="AccueilItem P2">
+          <img src="../images/Disney1.webp" />
+        </li>
+        <li class="AccueilItem P1"><a href="../index.html">Accueil</a></li>
+        <li class="AccueilItem P1">
+          <a href="../html/Animaux.html">Animaux</a>
+        </li>
+        <li class="AccueilItem P3"><a href="../html/Me.html">Me</a></li>
+        <li class="AccueilItem P3">
+          <a href="../html/Famille.html">Famille</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!--Version Mobile & Tablet-->
+    <nav class="Mobile">
+      <input
+        type="image"
+        src="../images/Disney1.webp"
+        class="DropMenuButton"
+        id="Button"
+        alt="Menu"
+      />
+      <div class="DropMenu" id="DropMenu">
+        <a href="../index.html">Accueil</a>
+        <a href="../html/Animaux.html">Animaux</a>
+        <a href="../html/Me.html">Me</a>
+        <a href="../html/Famille.html">Famille</a>
+      </div>
+    </nav>
+    <main></main>
+
+    <script src="../js/DropMenu.js"></script>
+  </body>
 </html>

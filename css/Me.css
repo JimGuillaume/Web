@@ -1,0 +1,8 @@
+.CardContainer {
+  display: flex;
+  flex-flow: column wrap;
+}
+.Card {
+  max-height: 200px;
+  max-width: 200px;
+}

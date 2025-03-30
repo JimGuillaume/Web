@@ -4,62 +4,91 @@ ul {
   margin: 0;
 }
 
+a {
+  color: #FFF5E4;
+  text-shadow: #FFE3E1 1px 1px;
+}
 a:link,
 a:visited,
 a:active,
 a:hover {
+  font-size: 65px;
   text-decoration: none;
-  color: currentColor;
+}
+
+.NotMobile {
+  display : block
+}
+.Mobile {
+  display : none;
 }
 
 .AccueilContainer {
-  background: transparent;
-  height: auto;
-  width: auto;
   display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: flex-start;
+  flex-flow: rown nowrap;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
   align-content: center;
-
-  text-shadow: black 1px 1px;
-  z-index: 15;
 }
 
 .AccueilItem {
-  display: none;
-  margin-bottom: 10px;
-  padding: 5%;
-  font-size: 35px;
+  display: inline-block;
 }
 
-@media only screen and (min-width: 1250px) {
-  .AccueilContainer {
-    flex-flow: row wrap;
-    justify-content: center;
+.AccueilItem.P1 {order:1;}
+.AccueilItem.P2 {order:2;}
+.AccueilItem.P3 {order:3;}
+
+.AccueilItem img {
+  height: 100px;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 1250px) {
+  .Mobile {
+    display : flex;
+    position: relative
+    flex-flow: rown nowrap;
+    width: 100%;
+    justify-content: space-evenly;
     align-items: center;
-    height: 100px;
+    align-content: center;
   }
-
-  .AccueilItem {
-    display: flex;
+  .NotMobile {
+    display : none
   }
+}
 
-  .AccueilItem.P1 {
-    order: 1;
-  }
+.DropMenuButton {
+  border-radius: 50%;
+  height: 100px;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
 
-  .AccueilItem.P2 {
-    order: 2;
-  }
+.DropMenu {
+  display: none;
+  flex-flow: row wrap;
+  position: relative;
+  top: 0; 
+  background-color: transparent;
+  min-width: 160px;
+  padding: 10px 0;
+}
 
-  .AccueilItem.P3 {
-    order: 3;
-  }
+.DropMenu a {
+  color: inherit;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
 
-  .ImgRounded {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
+
+
+@media only screen and (max-width: 600px) {
+  .DropMenu {
+    flex-flow: column nowrap;
   }
 }
