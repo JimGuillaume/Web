@@ -72,6 +72,7 @@ a:hover {
   display: none;
   flex-flow: row wrap;
   position: relative;
+  border: #AD8B73 5px dashed;
   top: 0; 
   background-color: transparent;
   min-width: 160px;
@@ -90,5 +91,6 @@ a:hover {
 @media only screen and (max-width: 600px) {
   .DropMenu {
     flex-flow: column nowrap;
+    border: #FFE3E1 3px dashed;
   }
 }

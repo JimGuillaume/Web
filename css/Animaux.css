@@ -1,0 +1,14 @@
+ .AnimauxContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start; 
+    width: 100%;
+    gap: 1%;
+}
+
+.slideshow-container {
+    flex: 1 1 30%;
+    max-width: 30%;
+    box-sizing: border-box;
+}
