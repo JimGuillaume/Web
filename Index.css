@@ -1,22 +1,12 @@
-/* COLORS
-
-#FCFDFA LIGHT SHADES
-#D3B5D5 LIGHT ACCENT
-#D56A6A MAIN BRAND COLOR
-#A09FB1 DARK ACCENT
-#6F7790 DARK SHADES
-*/
-
 
 /*GLOBAL*/
 body {
     all: unset;
     font-family: proxima-nova, sans-serif;
     font-size: 18px;
-    color: #FCFDFA;
+    color: #FFF5E4;
 
-    background-image: url("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmM0eWw1aHl4bXNveXFpaGNwb2NuZDlyZjBkOTZxZW5hcGNjdjM1ZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yrneKwpxDcQBb1uGRi/giphy.gif");
-    background-size: 100%;
+    background: #FFD1D1;
 }
 
 
@@ -49,7 +39,6 @@ body {
     transform: translateX(-50%);
 
     text-shadow: black 2px 2px;
-    color: #D56A6A;
     font-size : 2rem;
 }
 
@@ -66,7 +55,7 @@ body {
 @media only screen and (min-width: 1250px) {
 
     body  {
-        background-image: url("https://static.vecteezy.com/system/resources/previews/008/311/935/non_2x/the-illustration-graphic-consists-of-abstract-background-with-a-blue-gradient-dynamic-shapes-composition-eps10-perfect-for-presentation-background-website-landing-page-wallpaper-vector.jpg");
+        background-color: #112D4E;
     }
     .SelecteurContainer {
         position: relative;
