@@ -1,0 +1,23 @@
+@media only screen and (min-width: 600px) {
+
+    body {
+        background: #E3CAA5;    
+    }
+
+    h1 {
+        color: #FFFBE9;
+        text-shadow: #CEAB93 1px 1px;
+    }
+}
+
+@media only screen and (min-width: 1250px) {
+
+    body  {
+        background: #112D4E;
+    }
+
+    h1 {
+        color: #DBE2EF;
+        text-shadow: #112D4E 1px 1px;
+    }
+}

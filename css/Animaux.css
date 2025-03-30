@@ -1,32 +1,36 @@
 body {
-    all: unset;
-    font-family: proxima-nova, sans-serif;
-    font-size: 18px;
-    color: #FCFDFA;
+  all: unset;
+  font-family: proxima-nova, sans-serif;
+  font-size: 18px;
+  color: #fcfdfa;
 
-    background-image: url("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmM0eWw1aHl4bXNveXFpaGNwb2NuZDlyZjBkOTZxZW5hcGNjdjM1ZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yrneKwpxDcQBb1uGRi/giphy.gif");
-    background-size: 100%;
+  background-image: url("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmM0eWw1aHl4bXNveXFpaGNwb2NuZDlyZjBkOTZxZW5hcGNjdjM1ZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yrneKwpxDcQBb1uGRi/giphy.gif");
+  background-size: 100%;
 }
 
 .Global {
-    display: flex;
-    flex-flow : column nowrap;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 .ImgSlide {
-object-fit: cover;
-width: 500px;
-height: 500px;
+  object-fit: cover;
+  width: 500px;
+  height: 500px;
 }
 
+/*MEDIA QUERIES TABLET 600+*/
+@media only screen and (min-width: 600px) {
+}
 
+/*MEDIA QUERIES PC 1250+*/
 @media only screen and (min-width: 1250px) {
-    .Global{
-        flex-flow: row nowrap;
-        height: 100vh;
-    }
+  .Global {
+    flex-flow: row nowrap;
+    height: 100vh;
+  }
 
-    .slideshow-container {
-        width: 33vw;
-    }
+  .slideshow-container {
+    width: 33vw;
+  }
 }
