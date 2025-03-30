@@ -33,13 +33,6 @@ a:link, a:visited, a:active, a:hover {
 
 }
 
-.DropDownMenu{
-    display: flex;
-    border-radius: 50%;
-    height: auto;
-    width: 50%;
-}
-
 @media only screen and (min-width: 1250px) {
 
     body  {
@@ -52,24 +45,26 @@ a:link, a:visited, a:active, a:hover {
         height: 100px;    
     }
 
-    .DropDownMenu{
-        order : 2;
-        border-radius: 50%;
-        height: 100px;
-        width: 100px;
-    }
-
     .AccueilItem {
         display: flex;
     }
 
-    .P1 {
-        display: flex;
+
+    .AccueilItem.P1 {
         order: 1;
     }
 
-    .P2 {
-        display: flex;
+    .AccueilItem.P2{
+        order : 2;
+    }
+
+    .AccueilItem.P3 {
         order: 3;
+    }
+
+    .ImgRounded {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
     }
 }

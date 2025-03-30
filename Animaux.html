@@ -15,40 +15,43 @@
 </head>
 <body>
 
+
+  <!-- Bannière de dessus de page-->
 <div>
     <ul class="AccueilContainer">
-            <input type="image" src="https://picsum.photos/200" class="AccueilItem DropDownMenu" id="dropDownMenu">
-            <li class="AccueilItem P1" id="accueilItem"><a href="index.html">Accueil</a></li>
-            <li class="AccueilItem P1" id="accueilItem"><a href="Animaux.html">Animaux</a></li>
-            <li class="AccueilItem P2" id="accueilItem"><a href="Me.html">Me</a></li>
-            <li class="AccueilItem P2" id="accueilItem"><a href="Famille.html">Famille</a></li>
+            <li class="AccueilItem P2"><input type="image" src="https://picsum.photos/200" class="ImgRounded"></li>
+            <li class="AccueilItem P1"><a href="index.html">Accueil</a></li>
+            <li class="AccueilItem P1"><a href="Animaux.html">Animaux</a></li>
+            <li class="AccueilItem P3"><a href="Me.html">Me</a></li>
+            <li class="AccueilItem P3"><a href="Famille.html">Famille</a></li>
     </ul>
 </div>
 
 
-<div class="Global">
   <!--Images sérieuses -->  
- <div class="slideshow-container">
-  <!-- Ponyo -->
-    <div class="mySlides fade" data-slide-number="1">
-      <img src="Ponyo.jpg"  class="ImgSlide" style="border-radius: 50%;">
+  <div class="slideshow-container serieux">
+    <!-- Ponyo -->
+      <div class="mySlides fade" data-slide-number="1">
+        <img src="Ponyo.jpg"  class="ImgSlide" style="border-radius: 50%;">
+      </div>
+    <!--Kodak-->
+      <div class="mySlides fade" data-slide-number="2">
+        <img src="KodakSerieux.jpg"  class="ImgSlide" style="border-radius: 50%;">
+      </div>
+    
+      <div class="mySlides fade" data-slide-number="3">
+        <img src="TofuSerieux.jpg"  class="ImgSlide" style="border-radius: 50%;">
+      </div>
+    
+      <div class="mySlides fade" data-slide-number="4">
+        <img src="DiegoSerieux.jpg"  class="ImgSlide" style="border-radius: 50%;">
+      </div>
+    
     </div>
-  <!--Kodak-->
-    <div class="mySlides fade" data-slide-number="2">
-      <img src="KodakSerieux.jpg"  class="ImgSlide" style="border-radius: 50%;">
-    </div>
-  
-    <div class="mySlides fade" data-slide-number="3">
-      <img src="TofuSerieux.jpg"  class="ImgSlide" style="border-radius: 50%;">
-    </div>
-  
-    <div class="mySlides fade" data-slide-number="4">
-      <img src="DiegoSerieux.jpg"  class="ImgSlide" style="border-radius: 50%;">
-    </div>
-  
-   </div>
+
+
   <!-- Images marrantes-->
-  <div class="slideshow-container">
+  <div class="slideshow-container fun">
   
     <div class="mySlides fade" data-slide-number="1">
       <div class="numbertext">1 / 4</div>
@@ -78,21 +81,48 @@
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
   <br>
+ </div>
+
+
+  <div class="slideshow-container annecdote">
+    <!-- Ponyo -->
+    <div class="mySlides fade" data-slide-number="1">
+      <h1>Salut je suis ponyo l'axolot</h1>
+      <p>
+        Il fut un jour où le poisson de l'aquarium adjacent décida de sauter
+        dans le mien, j'ai alors découvert un magnifiuqe casse-croute pour ma
+        journée.
+      </p>
+    </div>
+    <!--Kodak-->
+    <div class="mySlides fade" data-slide-number="2">
+      <h1>Kodak la faillite</h1>
+      <p>
+        Mon maitre m'a nommé kodak comme une entreprise qui n'existe presque plus
+        car je ne fais que manger le profit dans ma gamelle. Les enfants m'appelent
+        même "Grosdak" à cause de ça.
+      </p>
+    </div>
   
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-    <span class="dot" onclick="currentSlide(4)"></span>
-  </div> 
+    <div class="mySlides fade" data-slide-number="3">
+      <h1>Tofu l'adresse</h1>
+      <p>
+        Moi c'est Tofu, je suis un chat très charismatique, je le suis encore plus quand
+        je fais totalement exprès de rater tout mes sauts. Je suis un vrai pro de la chute.
+      </p>
+    </div>
   
-  
-  <div class="slideshow-container">
+    <div class="mySlides fade" data-slide-number="4">
+      <h1>Diego l'alarme</h1>
+      <p>
+        Moi c'est diego. Je suis le protecteur génial de mon terrictoire.
+        Je suis tellement efficace que quand j'abboie je fais fuir les gens qui viennent
+        me rendre visite.
+      </p>
+    </div>
+   </div>
   
   </div>
-
-</div>
-    
 <script src="carousel.js"></script>
 
 </body>
