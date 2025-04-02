@@ -8,8 +8,8 @@ body h1{
 .CardContainer {
   display: flex;
   flex-flow: row wrap;
-  align-items: baseline;
-  align-content: flex-start;
+  align-items: center;
+  align-content: center;
   justify-content: space-evenly;
   width: 100%;
   height: 800px;
@@ -19,34 +19,28 @@ body h1{
   margin: 5px;
   background-color: #3F72AF;
   border-radius: 5px;
-  z-index: 1;
   position: relative;
   flex: 1 1 30%;
   width: auto;
-  height: 300px;
-  transition: filter 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+  height: 300px; 
 }
 
 .Card h2 {
-  z-index: 2;
   position: relative;
-  left: 35%;
-  top: 150px;
 }
 
 .Card p {
   display: none;
   position: relative;
-  z-index: 3;
-  text-align: center;
   color: white;
-  margin-top: 10px;
-}
-
-.Card:hover {
-  filter: blur(5px);
+  top: 150px;
 }
 
 .Card:hover p {
   display: block;
+  z-index: 2;
+}
+
+.Card:hover h2 {
+  display: none;
 }
