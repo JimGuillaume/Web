@@ -6,6 +6,7 @@
 
     <!--Import CSS & JS-->
     <link rel="stylesheet" href="../css/Timeline.css" />
+    <link rel="stylesheet" href="../css/cards.css" />
     <link rel="stylesheet" href="../css/banner.css" />
     <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../css/Me.css" />
@@ -17,7 +18,7 @@
     <nav class="NotMobile">
       <ul class="AccueilContainer">
         <li class="AccueilItem P2">
-          <img src="../images/Disney1.webp" />
+          <img src="../images/Disney1.webp" alt="Image de Disneyland"/>
         </li>
         <li class="AccueilItem P1"><a href="../index.html">Accueil</a></li>
         <li class="AccueilItem P1">
@@ -47,6 +48,7 @@
       </div>
     </nav>
 
+    <main>
     <!--Block 1  Timeline de ma scolarité-->
     <h1>Timeline de ma scolarité</h1>
     <div class="timeline">
@@ -106,42 +108,41 @@
     </div>
     <!--Block 3 Cards avec mes projects-->
     <h1>Liste des projets</h1>
-    <div class="CardContainer">
-      <div class="Card">
-        <h2>Gestion DB en C#</h2>
-        <p>
-          Mise en place d'une gestion de DB à l'aide d'un programme en C# en
-          lien avec pgsql
-        </p>
+
+    <div class="card-container">
+      <div class="card card1">
+          <div class="card-content">
+            <a href="https://github.com/JimGuillaume">
+              <h2 class="card-title">Github</h2>
+              <p class="card-description">Lien vers mon github</p>
+            </a>
+          </div>
       </div>
 
-      <div class="Card">
-        <h2>Projet Web1</h2>
-        <a
-          href="https://github.com/JimGuillaume/Web"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-        </a>
-        <p>
-          Mise en place d'un site personnel pour un projet de developpement
-          FrontEnd utilisant HTML, CSS & JavaScript.
-        </p>
+      <div class="card card2">
+          <div class="card-content">
+            <a href="https://github.com/JimGuillaume/LancementLoginDB">
+              <h2 class="card-title">Projet C# & pgsql</h2>
+              <p class="card-description">Utilisation de la bibliothèque npgsql pour 
+                etablir un lien entre un programme C# et une base de données créatrice d'utilisateurs.
+              </p>
+            </a>
+          </div>
       </div>
 
-      <div class="Card">
-        <h2>Github</h2>
-        <a
-          href="https://github.com/JimGuillaume"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-        </a>
-        <p>Liens vers ma page github</p>
+      <div class="card card3">
+          <div class="card-content">
+            <a href="https://github.com/JimGuillaume/Web">
+              <h2 class="card-title">Site Web Personnel</h2>
+              <p class="card-description">Projet de 1ère joignant FrontEnd basique avec du JS</p>
+            </a>
+          </div>
       </div>
-    </div>
+  </div>
 
-    <script src="../js/Camembert.js"></script>
-    <script src="../js/DropMenu.js"></script>
+  </main>
+
+  <script src="../js/Camembert.js"></script>
+  <script src="../js/DropMenu.js"></script>
   </body>
 </html>

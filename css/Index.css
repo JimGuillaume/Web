@@ -1,20 +1,20 @@
 .SelecteurContainer {
   display: flex;
   position: relative;
-  top: 10%;
-
-  height: auto;
-  width: auto;
-  flex-flow: column wrap;
+  top: 15vh;;
+  width: 100vw;
+  height: 60%;
+  flex-flow: row nowrap;
   justify-content: space-evenly;
-  align-items: center;
-  align-content: center;
+  align-items: stretch;
+  align-content: stretch;
+  transition: all 0.3s ease-in-out;
 }
 
 .Selecteur {
-  padding: 20px;
-  height: 300px;
-  width: auto;
+  position: relative;;
+  height: auto;
+  width: 30%;
   transition: all 0.3s ease-in-out;
 }
 
@@ -26,60 +26,43 @@
 }
 
 .Selecteur img {
-  border-radius: 50%;
+  border-radius: 15px;
   width: 100%;
   height: 100%;
   object-fit: cover;
+
 }
 
-/*MEDIA QUERIES TABLETTE 600 - 1250*/
-@media only screen and (min-width: 600px) {
+.SelecteurContainer:hover .Selecteur{
+  filter: blur(5px);
+}
+
+.SelecteurContainer .Selecteur:hover {
+  transform: scale(1.1);
+  filter: blur(0px);
+  z-index: 2;
+}
+
+/*VERSION TABLETTE*/
+@media only screen and (max-width: 1250px) {
   .SelecteurContainer {
-    flex-flow: row wrap;
+    flex-flow: rown wrap;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .SelecteurContainer {
+    flex-flow: column nowrap;
+    width: 100vw;
+    height: 100vh;
   }
 
   .Selecteur {
-    position: inherit;
-  }
-  .Selecteur img {
-    border-radius: 10px;
-  }
-}
-
-/*MEDIA QUERIES PC 1250+*/
-@media only screen and (min-width: 1250px) {
-  .SelecteurContainer {
-    position: relative;
-    top: 10%;
-    height: 60%;
-    width: 100%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    align-items: stretch;
-    align-content: stretch;
-  }
-
-  .Selecteur {
-    position: relative;
-    height: 100%;
-    width: 30%;
-    transform: skew(-5deg); /*Sur PC en faire des parallélogramme*/
-  }
-
-  .Selecteur h1 {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .SelecteurContainer:hover .Selecteur {
-    filter: blur(10px);
-  }
-
-  .SelecteurContainer .Selecteur:hover {
-    filter: blur(0);
-    z-index: 2;
-    transform: scale(1.05);
+    margin: 15px;
+    width: 50%;
+    height: auto;
+    left: 25%;
   }
 }
