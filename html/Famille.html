@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="../css/banner.css" />
     <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../css/Famille.css" />
+    <!--Liste des fichiers JS-->
+    <script src="../js/DropMenu.js"></script>
+    <script src="../js/famille.js"></script>
+
   </head>
   <body>
     <!-- Bannière de dessus de page-->
@@ -44,10 +48,25 @@
         <a href="../html/Famille.html">Famille</a>
       </div>
     </nav>
+
     <main>
-            
+      <button type="button" id="BazelgeuseButton" onclick="Bazelgeuse()">JE SUIS INUTILE</button>
+      <div class="BazelgeuseContainer" id="BazelgeuseContainer">
+        <audio id="BazelgeuseAudio">
+          <source src="../sound/Bazelgeuse.mp3" type="audio/mpeg" />
+        </audio>
+        <img src="../images/Famille/Bazelgeuse.webp" alt="Bazelgeuse"/>
+        <h2 class="Texte">BAZELGEUSE</h2>
+        <p class="Texte">Le Bazelgeuse est une grande wyverne volante recouverte de grosses écailles argentées 
+          avec des sortes de bombes organiques sous le cou, la queue et les talons. Sa taille imposante 
+          fait qu'il possède des ailes de très grande envergure.</p>
+        <p class="Texte">Les Bazelgeuse sont des wyvernes nomades et n'ont pas pour ainsi dire de territoire propre. 
+          On peut donc les retrouver dans à peu près toutes les régions du Nouveau monde et ce sont 
+          souvent des prédateurs alpha de la chaîne alimentaire locale, bien que l'écosystème se soit 
+          très bien adapté à sa présence.</p>
+      </div>
+        <button type="button" id="PauseButton" onclick="pause()">En vrai stop</button>
     </main>
 
-    <script src="../js/DropMenu.js"></script>
   </body>
 </html>

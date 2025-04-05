@@ -1,0 +1,54 @@
+/*GROS BOUTON*/
+#PauseButton {
+    display: none;
+    top: 15vh;
+    left: 52vw;
+}
+#BazelgeuseButton {
+    display: block;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid darkred;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.2s, box-shadow 0.2s; 
+  }
+  
+  #BazelgeuseButton:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  }
+  
+  #BazelgeuseButton:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+button {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+}
+
+.BazelgeuseContainer img {
+    width: 300px;
+    height: auto;
+    transition: transform 0.1s linear;
+}
+
+.BazelgeuseContainer {
+    display: none;
+
+}
+
+.Texte {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
