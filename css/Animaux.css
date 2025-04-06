@@ -37,3 +37,41 @@
 	margin-top: -1.25em;
 	margin-left: -1.25em;
 }
+
+@media only screen and (max-width: 1250px) {
+	.AnimauxContainer {
+		flex-flow: row nowrap;
+		top: 0;
+		height: 100vh;
+	}
+
+	.slideshow-container {
+		width: 40%;
+		height: 50%;
+	}
+
+	.ImgSlide {
+		height: 50vh;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.AnimauxContainer {
+		flex-flow: column nowrap;
+		top: 60%;
+		height: 100vh;
+	}
+
+	.slideshow-container {
+		width: 100%;
+		height: 50%;
+	}
+
+	.ImgSlide {
+		height: 50vh;
+	}
+	
+	.serieux {
+		display: none;
+	}
+}

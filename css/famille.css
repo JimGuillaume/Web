@@ -1,7 +1,9 @@
 button {
     position: absolute;
-    top: 50vh;
-    left: 50vw;
+    margin: 0 auto;
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 40%;
     color: white;
     font-size: 20px;
     font-weight: bold;
@@ -35,8 +37,6 @@ button {
 /*GROS BOUTON*/
 #PauseButton {
   display: none;
-  top: 15vh;
-  left: 52vw;
   background-color: green;
   border: 2px solid lightgreen;
 }
@@ -54,6 +54,7 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   display: block;
   background-color: red;
   border: 2px solid darkred;
+  margin-top: 300px;
 }
 
 #BazelgeuseButton:hover {
@@ -64,4 +65,47 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 #BazelgeuseButton:active {
   transform: scale(0.95);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+@media only screen and (max-width: 1250px) {
+  .Texte {
+    font-size: 1rem;
+    position: relative;
+  }
+
+  button {
+    border-radius: 25px;
+  }
+
+  .BazelgeuseContainer {
+    border: red solid 5px;
+  }
+
+  .BazelgeuseContainer h2 p {
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Texte {
+    font-size: 1rem;
+    position: relative;
+  }
+
+  button {
+    border-radius: 45%;
+  }
+
+  .BazelgeuseContainer {
+    border: red solid 5px;
+  }
+
+  .BazelgeuseContainer h2 p {
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+  }
 }

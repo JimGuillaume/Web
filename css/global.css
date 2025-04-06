@@ -1,18 +1,17 @@
-body {
+body  {
     all: unset;
     font-family: proxima-nova, sans-serif;
-    font-size: 18px;
-    color: #fff5e4;
-    background: #ffd1d1;
-  }
-  
-  h1, h2, p, a {
-    color: #fff5e4;
-    text-shadow: #ff9494 1px 1px;
-  }  
+    font-size: 18px;    
+    background: #112D4E;
+}
+
+h1, h2, p, a {
+        color: #DBE2EF;
+        text-shadow: #112D4E 1px 1px;
+}
 
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 1250px) {
 
     body {
         background: #E3CAA5;    
@@ -24,14 +23,14 @@ body {
     }
 }
 
-@media only screen and (min-width: 1250px) {
-
-    body  {
-        background: #112D4E;
-    }
-
-    h1, h2, p, a {
-        color: #DBE2EF;
-        text-shadow: #112D4E 1px 1px;
-    }
+@media only screen and (max-width: 600px) {
+    body {
+        color: #fff5e4;
+        background: #ffd1d1;
+      }
+      
+      h1, h2, p, a {
+        color: #fff5e4;
+        text-shadow: #ff9494 1px 1px;
+      } 
 }
