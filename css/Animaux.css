@@ -41,7 +41,7 @@
 @media only screen and (max-width: 1250px) {
 	.AnimauxContainer {
 		flex-flow: row nowrap;
-		top: 0;
+		top: 200px;
 		height: 100vh;
 	}
 

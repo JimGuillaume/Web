@@ -78,10 +78,6 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     border-radius: 25px;
   }
 
-  .BazelgeuseContainer {
-    border: red solid 5px;
-  }
-
   .BazelgeuseContainer h2 p {
     position: absolute;
     margin: 0 auto;
@@ -97,10 +93,6 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 
   button {
     border-radius: 45%;
-  }
-
-  .BazelgeuseContainer {
-    border: red solid 5px;
   }
 
   .BazelgeuseContainer h2 p {
