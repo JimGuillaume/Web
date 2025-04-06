@@ -3,20 +3,23 @@
     display: none;
     top: 15vh;
     left: 52vw;
+    background-color: green;
+    border: 2px solid lightgreen;
+}
+
+#PauseButton:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+#PauseButton:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 #BazelgeuseButton {
     display: block;
     background-color: red;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
     border: 2px solid darkred;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    text-transform: uppercase; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
-    transition: transform 0.2s, box-shadow 0.2s; 
   }
   
   #BazelgeuseButton:hover {
@@ -33,6 +36,15 @@ button {
     position: absolute;
     top: 50vh;
     left: 50vw;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.2s, box-shadow 0.2s; 
 }
 
 .BazelgeuseContainer img {
